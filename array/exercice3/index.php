@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Array exercice 2</title>
+	<title>Array exercice 3</title>
 </head>
 <body>
 	<?php
