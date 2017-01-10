@@ -10,10 +10,7 @@
 
 	foreach ($array as $key) {
 		echo $key;
-		
-
 	}
-
 	
 	?>
 </body>
