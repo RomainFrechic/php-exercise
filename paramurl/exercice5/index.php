@@ -1,11 +1,10 @@
 <?php
 function testUrl(){
-	$A = $_GET['langage'];
-	$B = $_GET['serveur'];
-	if(isset($A) && isset($B)){
-		echo "le PHP et le Serveur sont bien ici : ";
+	$A = $_GET['semaine'];
+	if(isset($A))
+	{
+		echo "la page est bien ici : ";
 		foreach($_GET as $value){
-			var_dump($value);
 		}	
 	}else{
 		echo "ERREUR 404";
@@ -21,6 +20,6 @@ function testUrl(){
 </head>
 <body>
 	<?php testUrl();  ?>
-	<a href="index.php?langage=PHP&amp;serveur=LAMP">Liens</a>
+	<a href="index.php?semaine=12">Liens</a>
 </body>
 </html>
