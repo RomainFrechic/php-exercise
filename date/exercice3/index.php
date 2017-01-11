@@ -6,7 +6,7 @@ setlocale (LC_TIME, 'fr_FR.utf8','fra');
 <html lang="en">
 <meta charset="UTF-8">
 
-<title>Date 1</title>
+<title>Date exercice 3</title>
 </head>
 <body>
 

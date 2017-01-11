@@ -5,7 +5,7 @@ $jour = date("d-m-y");
 <html lang="en">
 <meta charset="UTF-8">
 
-<title>Date 1</title>
+<title>Date exercice 2</title>
 </head>
 <body>
 
