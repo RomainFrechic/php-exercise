@@ -5,22 +5,40 @@
 .titreCadre{
 
 		border:1px solid Black;
+		box-shadow: 2px 2px 3px black;
 }
 
 .tableauCadre{
 		border:1px solid Black;	
-		text-align: center; 
+		text-align: center;
+		font-size: 32px; 
+		background-color: #00b9f1;
+		box-shadow: 2px 2px 3px black;
 }
 
 .jourBorder{
 		border:1px solid Black;	
-
+		background-color: white;
+		box-shadow: 2px 2px 3px black;
 }
 
 .jourBorder:hover{
 		background-color: blue;
+		text-shadow: 1px 1px 2px black;
 }
+
+
 
 .jBorder:hover{
 		background-color: pink;
+		box-shadow: 1px 1px 2px pink;
+		text-shadow: 1px 1px 2px black;
+		font-size: 40px;
+}
+
+.liste{
+	border-color: blue;
+	font-size: 32px;
+	box-shadow: 2px 2px 3px black;
+	background-color: #00b9f1;
 }
