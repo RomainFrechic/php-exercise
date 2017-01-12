@@ -15,16 +15,18 @@
 	}
 //Variable du tableau de 01 à 31
 	$l_day=date("t",mktime(0,0,0,$mois,1,$annee));
+	//echo $l_day;
 //Variable pour que lecommence tableau en partant du premier Jour 01
 	$x=date("N", mktime(0, 0, 0, $mois,1 , $annee));
 //Variable du nbre du mois selectionné
 	$y=date("N", mktime(0, 0, 0, $mois,$l_day , $annee));
+	//echo $y;
 
 //Affiche $_GET['mois'] et $_GET['annee']
 	$titre=$mois_fr[$mois]." : ".$annee;
 
 //Affiche le nbre de jour de 1 à 31 --> echo $l_day
-	echo $l_day;
+	//echo $l_day;
 
 	?>
 	<!DOCTYPE html>
@@ -41,7 +43,7 @@
 			<link href="style.css" rel="stylesheet" type="text/css" />
 		</head>
 		<body class="alignBlock">
-			<form name="dt" method="get" action="">
+			<form name="dt" method="post" action="index.php">
 				<select name="mois" id="mois" class="liste">
 					<?php
 	//Boucle pour les 12 mois
@@ -63,7 +65,7 @@
 					}
 					?>
 				</select>
-				<button>Envoyer</button>
+				<button class="liste">Envoyer</button>
 			</form>
 <!-- Affiche au dessus du tableau jour le contenu de la variable $titre 
 qui contiens le mois et l'année sélectionner
@@ -74,7 +76,7 @@ c'est ce contenu qui va nous servir à changer les données du calendriers -->
 	<tr>
 		<?php 
 // Affiche le nbre du mois selectionner --> echo $y
-		echo $y;
+		//echo $y;
 		$case=0;
 //Affiche le tableau en partant du premier Jour 01 avec la variable $x stocker plus haut
 		if($x>1)
@@ -100,7 +102,10 @@ c'est ce contenu qui va nous servir à changer les données du calendriers -->
 		//colonne de 7jours
 						echo "</tr><tr>";	
 				}
-				?>	
+				foreach ($_POST as $key => $value) {
+					echo $value;
+				}
+				?>
 			</tr>
 		</table>
 	</body>
